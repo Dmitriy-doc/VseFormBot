@@ -158,4 +158,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    logging.info("Запуск VseFormBot в режиме polling...")
+    asyncio.run(dp.start_polling(bot))
